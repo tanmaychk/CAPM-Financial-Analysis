@@ -105,3 +105,11 @@ try:
         st.dataframe(return_df,use_container_width=True,hide_index=True)
 except:
     st.write("Please selct atleast 1 stock")
+
+hide_default_format = """
+       <style>
+       #MainMenu {visibility: hidden; }
+       footer {visibility: hidden;}
+       </style>
+       """
+st.markdown(hide_default_format, unsafe_allow_html=True)
