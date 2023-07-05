@@ -13,7 +13,7 @@ st.set_page_config(page_title="CAPM",
 
 st.title("Capital Asset Pricing Model 💰")
 st.caption("The Capital Asset Pricing Model (CAPM) describes the relationship between systematic risk, or the general perils of investing, and expected return for assets, particularly stocks.It is a finance model that establishes a linear relationship between the required return on an investment and risk.")
-st.subheader("assumed risk free return = 4.5%")
+st.subheader("assumed risk free return = 4.25%")
 
 #Inputs
 
@@ -88,7 +88,7 @@ try:
         st.caption("risk of market is considered as 1")
         st.dataframe(beta_df,use_container_width=True,hide_index=True)
 
-    risk_free_asset = 4.5
+    risk_free_asset = 4.25
     market_return = stocks_daily_return["sp500"].mean()*252  #252 is the number of active trading days
 
     return_df = pd.DataFrame()
