@@ -1,5 +1,5 @@
 pip==23.1.2
-numpy==1.25.0
+numpy==1.20.3
 pandas==2.0.2
 pandas_datareader==0.10.0
 plotly==5.15.0
